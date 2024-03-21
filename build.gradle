@@ -20,15 +20,15 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
-// @SpringBootApplication이 설정된 파일
-bootJar {
-    mainClassName = 'com.jenkinstest.JenkinsTestApplication'
-}
-
-bootRun {
-    String activeProfile = System.properties['spring.profiles.active']
-    systemProperty "spring.profiles.active", activeProfile
-}
+//// @SpringBootApplication이 설정된 파일
+//bootJar {
+//    mainClassName = 'com.jenkinstest.JenkinsTestApplication'
+//}
+//
+//bootRun {
+//    String activeProfile = System.properties['spring.profiles.active']
+//    systemProperty "spring.profiles.active", activeProfile
+//}
 tasks.named('test') {
     useJUnitPlatform()
 }
