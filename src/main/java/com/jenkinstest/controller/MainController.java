@@ -9,6 +9,6 @@ public class MainController {
     @GetMapping("")
     @ResponseBody
     public String hello(){
-        return "Hello Jenkins! 3333";
+        return "Hello Jenkins! 44444";
     }
 }
