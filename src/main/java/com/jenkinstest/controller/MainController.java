@@ -9,6 +9,6 @@ public class MainController {
     @GetMapping("")
     @ResponseBody
     public String hello(){
-        return "Hello Jenkins! 3535353";
+        return "Hello Jenkins! 배포까지 자동으로 된걸까요!?";
     }
 }
